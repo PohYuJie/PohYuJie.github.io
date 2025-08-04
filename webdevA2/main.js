@@ -1,8 +1,8 @@
 
-let contentObserver;
-let allContentElements;
+let contentObserver;// Global variable for IntersectionObserver
+let allContentElements;// Will hold all elements with class 'allcontent'
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => { // Wait until page is fully loaded
   const page0btn = document.querySelector("#page0btn");
   const page1btn = document.querySelector("#page1btn");
   const page2btn = document.querySelector("#page2btn");
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
     currentPage.style.display = "block";
     currentPage.querySelectorAll('.allcontent').forEach(el => {
       el.classList.add('hidden');
-      contentObserver.observe(el);
+      contentObserver.observe(el); // Start observing scroll into view
     });
 
     // Set different background colors for Fun Facts page vs others
@@ -46,6 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 }
 
+//menu button
 const hamBtn = document.querySelector("#hamIcon");
 const menuItemsList = document.querySelector("nav ul");
 
@@ -60,6 +61,8 @@ page1btn.addEventListener("click", () => showPage(1));
 page2btn.addEventListener("click", () => showPage(2));
 page3btn.addEventListener("click", () => showPage(3));
 
+
+//scroll in animation
 contentObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
