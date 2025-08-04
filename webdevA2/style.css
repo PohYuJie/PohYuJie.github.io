@@ -1,3 +1,4 @@
+/*font used*/
 @font-face {
     font-family: 'Tag';
     src: url('Fonts/Tag.ttf') format('truetype');
@@ -105,7 +106,7 @@ nav ul {
 
 
 nav ul.menuShow {
-    max-height: 250px; /* enough to show items */
+    max-height: 250px;
     opacity: 1;
 }
 
@@ -180,7 +181,7 @@ nav ul.menuShow li {
 .page{
     background-color: rgb(150, 75, 0);
     height: auto;
-    margin-top: 580px;
+    margin-top: 400px;
     border: 10px solid black;
 
 }
@@ -398,8 +399,8 @@ nav ul.menuShow li {
 
 .gamepear {
     display: none;
-    width: 8%; 
-    height: 8%;
+    width: 10%; 
+    height: 10%;
     background-image: url(Images/gamepear.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -520,8 +521,30 @@ nav ul.menuShow li {
 /*pages*/
 @media (max-width: 800px) {
 
+
     #title{
-        margin-bottom: 200px
+        margin-bottom: 200px;
+        font-size: 30px;
+    }
+
+    .gamehead{
+        font-size: 20px
+    } 
+
+    #page2 h2{
+        font-size: 20px;
+        margin-top: 50px
+    }
+
+    #page2 h3{
+    font-size: 15px;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 50px
+    }
+
+    #page3 h2{
+        font-size: 20px;
     }
 
     .nav1 {
@@ -539,7 +562,7 @@ nav ul.menuShow li {
     }
 
     .page{
-        margin-top: 585px
+        margin-top: 450px
     }
 
     .allcontent{
@@ -576,3 +599,13 @@ nav ul.menuShow li {
 }
 
 
+@media (max-width: 500px) {
+    .page{
+        margin-top: 440px
+    }
+
+    .nav1{
+        font-size: 10px;
+    }
+
+}
