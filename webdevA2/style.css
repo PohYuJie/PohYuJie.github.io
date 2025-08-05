@@ -33,6 +33,7 @@ body{
     font-family: 'Tag';
     color: yellow;
     position: relative;
+    background-color: rgb(150, 75, 0);
 }
 
 
@@ -611,4 +612,5 @@ nav ul.menuShow li {
     }
 
 }
+
 
